@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-hacm
 Version:	0.1
-Release:	7
+Release:	8
 Summary:	Font support for the Arka language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/hacm
