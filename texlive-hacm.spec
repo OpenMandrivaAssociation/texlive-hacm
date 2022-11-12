@@ -1,18 +1,12 @@
-# revision 27671
-# category Package
-# catalog-ctan /fonts/hacm
-# catalog-date 2012-09-10 11:33:53 +0200
-# catalog-license lppl1.3
-# catalog-version 0.1
 Name:		texlive-hacm
-Version:	0.1
-Release:	11
+Version:	27671
+Release:	1
 Summary:	Font support for the Arka language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/hacm
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hacm.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hacm.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hacm.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hacm.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ constructed language Arka. The bundle provides nine official
 fonts, in Adobe Type 1 format.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -84,7 +78,7 @@ fonts, in Adobe Type 1 format.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
