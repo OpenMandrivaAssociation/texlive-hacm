@@ -3,7 +3,7 @@ Version:	27671
 Release:	2
 Summary:	Font support for the Arka language
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/hacm
+URL:		https://www.ctan.org/tex-archive/fonts/hacm
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hacm.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hacm.doc.r%{version}.tar.xz
